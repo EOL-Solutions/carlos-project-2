@@ -158,7 +158,7 @@ class Earth extends Component {
 
     const colorFonts = 0xbdbdbd
     const textFilm = 'Our Company'
-    loader.load('/fonts/Federation_Bold.json', function (font) {
+    loader.load('/fonts/federation_bold.json', function (font) {
       const geometry = new TextGeometry(textFilm, {
         font,
         size: 0.13,
