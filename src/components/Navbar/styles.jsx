@@ -112,7 +112,8 @@ export const Menu = styled.div`
         border-radius: 4px;
         transition: all 0.5s ease-in-out;
         &:hover{
-          background-color: #00000084;
+          background-color: #4e4e4e84;
+          font-weight: bolder;
         }
       }
     }`} 
