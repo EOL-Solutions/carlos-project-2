@@ -1,5 +1,4 @@
-
-import Earth from '../../components/Earth'
+import Earth2 from '@/components/Earth2'
 import { Banner } from './styles'
 import { BsGithub } from 'react-icons/bs'
 import { FaGitlab } from 'react-icons/fa'
@@ -20,7 +19,7 @@ const Home = () => {
           </div>
         </div>
         <div className='render'>
-          <Earth />
+          <Earth2 />
         </div>
       </Banner>
     </main>

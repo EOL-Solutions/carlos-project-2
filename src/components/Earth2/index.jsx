@@ -38,7 +38,7 @@ class Earth2 extends Component {
     // camera = new THREE.PerspectiveCamera(50,window.innerWidth/window.innerHeight,1,1000);
     camera = new THREE.PerspectiveCamera(fov, aspect, near, far)
     // camera.position.set(0,0,500);
-    camera.position.set(5, 0.5, 4)
+    camera.position.set(1, 2, 3)
     controls = new OrbitControls(camera, renderer.domElement)
     controls.autoRotate = true
     controls.autoRotateSpeed = 3
@@ -120,7 +120,7 @@ class Earth2 extends Component {
 
   render () {
     return (
-      <div id='appSphere' style={{ width: 700, height: 700 }}/>
+      <div id='appSphere' style={{ width: '100%', height: '100%' }}/>
     )
   }
 }
