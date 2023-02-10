@@ -3,8 +3,10 @@ import { Banner } from './styles'
 import { BsGithub } from 'react-icons/bs'
 import { FaGitlab } from 'react-icons/fa'
 import { SiJirasoftware } from 'react-icons/si'
+
 const Home = () => {
   return (
+
     <main>
       <Banner className='custom-container'>
         <div>
@@ -18,11 +20,14 @@ const Home = () => {
             <SiJirasoftware color='white' size={80} />
           </div>
         </div>
+
         <div className='render'>
           <Earth />
         </div>
+
       </Banner>
     </main>
+
   )
 }
 export default Home

@@ -80,8 +80,8 @@ class Earth extends Component {
     // )
     const material = new THREE.MeshPhongMaterial({
       specular: 0x3d3d3d,
-      roughness: 0.5,
-      metalness: 0.5,
+      // roughness: 0.5,
+      // metalness: 0.5,
       map: new THREE.TextureLoader().load(mapTexture)
     })
     sphere = new THREE.Mesh(geometry, material)
@@ -176,7 +176,7 @@ class Earth extends Component {
 
       const material = new THREE.MeshStandardMaterial({
         color: colorFonts,
-        roughness: 0,
+        // roughness: 0,
         fog: true,
         envMap: 'bricks'
       })

@@ -7,23 +7,26 @@ import Seo from '../components/Seo'
 import { Events } from '../pages/Events'
 import About from '../pages/About'
 import ErrorPage from '../components/ErrorPage'
+import Loading from '../components/Loading'
+import { Suspense } from 'react'
 
 function App () {
-  return (<>
-    <Seo />
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<IndexTemplate />} >
-          <Route index element={<Home/>} />
-          <Route path='about' element={<About />} />
-          <Route path='events' element={<Events/>} />
-
-          <Route path='*' element={<ErrorPage />} />
-
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  </>
+  return (
+    <>
+      <Suspense fallback={<Loading/>}>
+        <Seo />
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<IndexTemplate />} >
+              <Route index element={<Home/>} />
+              <Route path='about' element={<About />} />
+              <Route path='events' element={<Events/>} />
+              <Route path='*' element={<ErrorPage />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </Suspense>
+    </>
 
   )
 }
