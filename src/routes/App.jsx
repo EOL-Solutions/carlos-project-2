@@ -6,6 +6,7 @@ import Home from '../pages/Home'
 import Seo from '../components/Seo'
 import { Events } from '../pages/Events'
 import About from '../pages/About'
+import ErrorPage from '../components/ErrorPage'
 
 function App () {
   return (<>
@@ -17,7 +18,7 @@ function App () {
           <Route path='about' element={<About />} />
           <Route path='events' element={<Events/>} />
 
-          <Route path='*' element={<h1>404</h1>} />
+          <Route path='*' element={<ErrorPage />} />
 
         </Route>
       </Routes>
